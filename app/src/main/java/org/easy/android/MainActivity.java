@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.easy.android.drag.DragViewActivity;
-
+/**
+ * https://blog.csdn.net/seevc/article/details/81485482
+ * */
 public class MainActivity extends AppCompatActivity {
     Intent intent;
     @Override
