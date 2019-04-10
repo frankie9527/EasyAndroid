@@ -21,4 +21,12 @@ public class MainActivity extends AppCompatActivity {
         intent=new Intent(this, DragViewActivity.class);
         startActivity(intent);
     }
+    public void slide(View view) {
+        intent=new Intent(this, SlidingActivity.class);
+        startActivity(intent);
+    }
+    public void statusControl(View view) {
+        intent=new Intent(this, StatusControlActivity.class);
+        startActivity(intent);
+    }
 }

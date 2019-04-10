@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<Button
-    android:id="@+id/drag"
-    android:onClick="drag"
-    android:text="drag"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="drag"
+        android:text="拖动的list" />
 
+    <Button
+        android:id="@+id/slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/drag"
+        android:onClick="slide"
+        android:text="侧拉栏" />
+    <Button
+        android:id="@+id/statusControl"
+        android:layout_toEndOf="@id/slide"
+        android:onClick="statusControl"
+        android:text="布局控制器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

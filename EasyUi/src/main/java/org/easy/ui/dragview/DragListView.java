@@ -132,6 +132,9 @@ public class DragListView extends ListView {
      * 状态栏和toolbar 一共的高度
      */
     public void initActionBarHeight(AppCompatActivity activity) {
+        if (activity.getSupportActionBar()==null){
+            return;
+        }
         actionbarHeight = activity.getSupportActionBar().getHeight();
         if (actionbarHeight != 0)
             return ;
