@@ -12,6 +12,7 @@ import org.easy.ui.StatusControlLayout;
  * author：jyh
  * QQ：847145851
  * time：2019/4/10
+ * https://github.com/ZengChong500373
  * note ： 自定义子布局  activity_status_control_error  加载失败自布局 给他的控件设置id 为  retry_view
  * 这样点击才能生效
  **/

@@ -12,6 +12,7 @@ import org.easy.ui.dragview.DragGridAdapter;
  * author：jyh
  * QQ：847145851
  * time：2019/4/2
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public class GridAdaper extends DragGridAdapter<String> {

@@ -10,6 +10,7 @@ import com.bumptech.glide.request.RequestOptions;
  * author：jyh
  * QQ：847145851
  * time：2019/4/3
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public class GlideUtils {

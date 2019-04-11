@@ -19,6 +19,7 @@ import java.util.List;
  * author：jyh
  * QQ：847145851
  * time：2019/4/2
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public class DragViewActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener {
@@ -34,7 +35,7 @@ public class DragViewActivity extends AppCompatActivity implements Toolbar.OnMen
         setContentView(R.layout.activity_container);
         frame_parent = findViewById(R.id.frame_container);
         toolbar = findViewById(R.id.toolbar);
-        toolbar.inflateMenu(R.menu.drag_menu);
+        toolbar.inflateMenu(R.menu.menu_drag);
         toolbar.setOnMenuItemClickListener(this);
         initData();
         initList();

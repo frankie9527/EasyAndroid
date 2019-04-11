@@ -10,6 +10,7 @@ import org.easy.tools.utils.CrashHandler;
  * author：jyh
  * QQ：847145851
  * time：2019/4/2
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public class App extends Application {

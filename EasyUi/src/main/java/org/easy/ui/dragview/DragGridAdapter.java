@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Created by jyh on 2016/7/21.
+ * https://github.com/ZengChong500373
  */
 public class DragGridAdapter<T> extends BaseAdapter {
 

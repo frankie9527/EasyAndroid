@@ -23,6 +23,7 @@
             android:name=".SlidingActivity"
             android:theme="@style/SlideTheme" />
         <activity android:name=".StatusControlActivity"/>
+        <activity android:name=".vp.ViewPagerActivity"/>
     </application>
 
 </manifest>

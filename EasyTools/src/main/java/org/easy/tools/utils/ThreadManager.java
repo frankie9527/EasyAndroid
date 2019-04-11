@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by jyh on 2016/7/11.
+ * https://github.com/ZengChong500373
  */
 public class ThreadManager {
     private static ThreadManager manager = null;

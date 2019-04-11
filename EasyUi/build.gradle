@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven' // 增加
 android {
     compileSdkVersion 28
@@ -27,4 +29,8 @@ dependencies {
     api 'com.android.support.constraint:constraint-layout:1.1.3'
     api 'com.android.support:recyclerview-v7:28.0.0'
     implementation project(':EasyTools')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

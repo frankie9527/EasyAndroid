@@ -4,7 +4,13 @@ import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-
+/**
+ * author : jyh
+ * date : 2019/4/11
+ * qq : 84714581
+ * https://github.com/ZengChong500373
+ * describe :
+ */
 public class TabViewpager extends ViewPager {
     public TabViewpager(Context context) {
         super(context);

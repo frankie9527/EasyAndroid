@@ -3,6 +3,7 @@ package org.easy.tools;
  * author：jyh
  * QQ：847145851
  * time：2019/4/10
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public interface Key {

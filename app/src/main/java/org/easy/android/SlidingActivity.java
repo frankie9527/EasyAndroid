@@ -13,6 +13,7 @@ import org.easy.ui.SlidingLayout;
  * author：jyh
  * QQ：847145851
  * time：2019/4/10
+ * https://github.com/ZengChong500373
  * describe：
  **/
 public class SlidingActivity extends AppCompatActivity implements View.OnClickListener {

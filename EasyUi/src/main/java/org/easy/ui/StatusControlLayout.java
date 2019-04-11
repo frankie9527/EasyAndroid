@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
  * time：2019/4/10
  * describe： 控制视图显示的布局
  * 包含 加载失败子布局  loading 布局 重新加载布局
+ * https://github.com/ZengChong500373
  * <p>
  * note 如果要自定义加载的布局。一定要给重新点击的布局设置id  为 retry_view  否则点击不生效
  *
@@ -80,7 +81,6 @@ public class StatusControlLayout extends FrameLayout {
         super.onFinishInflate();
         if (contentViewId==-1&&getChildCount()>0){
             contentView=getChildAt(0);
-            int a=1;
         }
     }
 

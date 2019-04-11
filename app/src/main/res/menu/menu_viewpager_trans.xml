@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:title="Default"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Accordion"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="BackgroundToForeground"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="CubeIn"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="CubeOut"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="DepthPage"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="FlipHorizontal"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="FlipVertical"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ForegroundToBackground"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="RotateDown"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ScaleInOut"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Stack"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Tablet"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ZoomIn"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ZoomOutSlide"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ZoomOut"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Drawer"
+        app:showAsAction="collapseActionView" />
+</menu>
