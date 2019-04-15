@@ -35,4 +35,14 @@
         android:layout_height="wrap_content"
         android:onClick="vp"
         android:text="viewpager" />
+    <Button
+        android:id="@+id/banner"
+        android:layout_below="@+id/drag"
+        android:layout_toEndOf="@id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="banner"
+        android:text="banner" />
+
+
 </RelativeLayout>

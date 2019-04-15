@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:title="RotateDown"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="RotateUp"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="RotateY"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Standard"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="Alpha"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="ScaleIn"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="RotateDown and Alpha"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:title="RotateDown and Alpha And ScaleIn"
+        app:showAsAction="collapseActionView" />
+
+</menu>

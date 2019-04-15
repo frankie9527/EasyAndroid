@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.easy.android.drag.DragViewActivity;
+import org.easy.android.vp.BannerActivity;
 import org.easy.android.vp.ViewPagerActivity;
 
 /**
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void vp(View view) {
         intent=new Intent(this, ViewPagerActivity.class);
+        startActivity(intent);
+    }
+    public void banner(View view) {
+        intent=new Intent(this, BannerActivity.class);
         startActivity(intent);
     }
 }

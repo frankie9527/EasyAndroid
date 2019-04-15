@@ -24,6 +24,7 @@
             android:theme="@style/SlideTheme" />
         <activity android:name=".StatusControlActivity"/>
         <activity android:name=".vp.ViewPagerActivity"/>
+        <activity android:name=".vp.BannerActivity"/>
     </application>
 
 </manifest>
