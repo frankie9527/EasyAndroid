@@ -67,11 +67,9 @@
                 android:layout_height="wrap_content" />
 
             <FrameLayout
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_centerInParent="true"
-                android:background="#aadc71ff"
                 android:clipChildren="false">
 
                 <android.support.v4.view.ViewPager

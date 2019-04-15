@@ -17,7 +17,7 @@ public interface Key {
 
     String TITLE = "title";
 
-    String position = "POSITION";
+    String POSITION = "position";
 
 
 }

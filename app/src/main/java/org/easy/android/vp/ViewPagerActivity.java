@@ -52,13 +52,14 @@ import java.util.Map;
  */
 public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener {
     Toolbar toolbar;
-    ViewPager vp,vp2;
-    DemoAdapter adapter,adapter2;
+    ViewPager vp, vp2;
+    DemoAdapter adapter, adapter2;
     Map<String, ViewPager.PageTransformer> map = new HashMap<>();
     Map<String, ViewPager.PageTransformer> map2 = new HashMap<>();
     RadioGroup rg;
-    private TextView tv_title,tv_title2;
-    private int checkType=0;
+    private TextView tv_title, tv_title2;
+    private int checkType = 0;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,16 +88,16 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
         map.put("Drawer", new DrawerTransformer());
         toolbar.setTitle("Default");
 
-        map2.put("RotateDown",new RotateDownPageTransformer());
-        map2.put("RotateUp",new RotateUpPageTransformer());
+        map2.put("RotateDown", new RotateDownPageTransformer());
+        map2.put("RotateUp", new RotateUpPageTransformer());
         map2.put("RotateY", new RotateYTransformer(45));
         map2.put("Standard", NonPageTransformer.INSTANCE);
-        map2.put("Alpha",new AlphaPageTransformer());
-        map2.put("ScaleIn",new ScaleInTransformer());
-        map2.put("RotateDown and Alpha",new RotateDownPageTransformer(new AlphaPageTransformer()));
-        map2.put("RotateDown and Alpha And ScaleIn",new RotateDownPageTransformer(new AlphaPageTransformer(new ScaleInTransformer())));
-        tv_title=findViewById(R.id.tv_title);
-        tv_title2=findViewById(R.id.tv_title2);
+        map2.put("Alpha", new AlphaPageTransformer());
+        map2.put("ScaleIn", new ScaleInTransformer());
+        map2.put("RotateDown and Alpha", new RotateDownPageTransformer(new AlphaPageTransformer()));
+        map2.put("RotateDown and Alpha And ScaleIn", new RotateDownPageTransformer(new AlphaPageTransformer(new ScaleInTransformer())));
+        tv_title = findViewById(R.id.tv_title);
+        tv_title2 = findViewById(R.id.tv_title2);
     }
 
     private void initViews() {
@@ -110,13 +111,13 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
         adapter = new DemoAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
 
-        vp2=findViewById(R.id.vp2);
+        vp2 = findViewById(R.id.vp2);
         vp2.setPageMargin(40);
         vp2.setOffscreenPageLimit(3);
         adapter2 = new DemoAdapter(getSupportFragmentManager());
         vp2.setAdapter(adapter2);
 
-        rg= findViewById(R.id.rg);
+        rg = findViewById(R.id.rg);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -124,12 +125,12 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
                     case R.id.up:
                         toolbar.getMenu().clear();
                         toolbar.inflateMenu(R.menu.menu_viewpager_trans);
-                        checkType=0;
+                        checkType = 0;
                         break;
                     case R.id.down:
                         toolbar.getMenu().clear();
                         toolbar.inflateMenu(R.menu.menu_viewpager_trans2);
-                        checkType=1;
+                        checkType = 1;
                         break;
                 }
             }
@@ -139,17 +140,17 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
         String str = (String) menuItem.getTitle();
-            ViewPager.PageTransformer transformer=  null;
-            if ( checkType==0){
-                transformer=map.get(str);
-                vp.setPageTransformer(true, transformer);
-                tv_title.setText(str);
-            }else {
-                transformer=map2.get(str);
-                vp2.setPageTransformer(true, transformer);
-               vp2.setAdapter(adapter2);
-                tv_title2.setText(str);
-            }
+        ViewPager.PageTransformer transformer = null;
+        if (checkType == 0) {
+            transformer = map.get(str);
+            vp.setPageTransformer(true, transformer);
+            tv_title.setText(str);
+        } else {
+            transformer = map2.get(str);
+            vp2.setPageTransformer(true, transformer);
+            vp2.setAdapter(adapter2);
+            tv_title2.setText(str);
+        }
         return false;
     }
 
