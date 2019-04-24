@@ -30,7 +30,7 @@ public class BaseRecyclerHolder extends RecyclerView.ViewHolder implements View.
 
     @Override
     public boolean onLongClick(View view) {
-        if (mListener != null) {
+        if (mLongClickListener != null) {
             mLongClickListener.onItemLongClick(view, getAdapterPosition());
         }
         return true;

@@ -66,6 +66,12 @@ public abstract class BaseRecyclerAdapter<D, H extends BaseRecyclerHolder> exten
         list.clear();
         notifyDataSetChanged();
     }
+    public D getDataInPostion(int position){
+        if (list==null||list.size()<position){
+            return null;
+        }
+        return list.get(position);
+    }
 
     @Override
     public int getItemCount() {

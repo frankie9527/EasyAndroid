@@ -32,7 +32,7 @@ import java.util.List;
  * https://github.com/ZengChong500373
  * describe :
  */
-public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, ItemClickListener, ItemLongClickListener {
+public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, ItemClickListener {
     Toolbar toolbar;
     RecyclerView recycler;
     RecyclerDemoAdapter adapter;
@@ -58,7 +58,7 @@ public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMen
         recycler.setAdapter(adapter);
         recycler.addItemDecoration(new RxRecyclerViewDividerTool(0,0, UiUtils.dp2px(1),0));
         adapter.setItemListener(this);
-        adapter.setLongListener(this);
+//        adapter.setLongListener(this);
     }
 
     private void initData() {
@@ -100,8 +100,8 @@ public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMen
         ToastUtils.getInstance().show("onItemClick postion="+postion);
     }
 
-    @Override
-    public void onItemLongClick(View view, int postion) {
-        ToastUtils.getInstance().show("onItemLongClick postion="+postion);
-    }
+//    @Override
+//    public void onItemLongClick(View view, int postion) {
+//        ToastUtils.getInstance().show("onItemLongClick postion="+postion);
+//    }
 }
