@@ -6,21 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/drag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="drag"
         android:text="拖动的list" />
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/slide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/drag"
         android:onClick="slide"
         android:text="侧拉栏" />
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/statusControl"
         android:layout_toEndOf="@id/slide"
         android:onClick="statusControl"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/vp"
         android:layout_below="@+id/drag"
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:onClick="vp"
         android:textAllCaps="false"
         android:text="viewpager 特效" />
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/banner"
         android:layout_below="@+id/drag"
         android:layout_toEndOf="@id/vp"

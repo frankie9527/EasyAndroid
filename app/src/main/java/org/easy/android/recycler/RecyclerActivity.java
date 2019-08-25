@@ -3,13 +3,13 @@ package org.easy.android.recycler;
 
 import android.os.Bundle;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -19,7 +19,6 @@ import org.easy.tools.utils.ToastUtils;
 import org.easy.tools.utils.UiUtils;
 import org.easy.ui.recycler.RxRecyclerViewDividerTool;
 import org.easy.ui.recycler.listener.ItemClickListener;
-import org.easy.ui.recycler.listener.ItemLongClickListener;
 
 import java.util.ArrayList;
 import java.util.List;

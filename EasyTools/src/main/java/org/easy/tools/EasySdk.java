@@ -2,7 +2,7 @@ package org.easy.tools;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import org.easy.tools.utils.CrashHandler;
 
