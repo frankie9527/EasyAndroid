@@ -24,7 +24,8 @@
             android:theme="@style/SlideTheme" />
         <activity android:name=".StatusControlActivity"/>
         <activity android:name=".vp.ViewPagerActivity"/>
-        <activity android:name=".recycler.RecyclerActivity"/>
+        <activity android:name=".recycler.simple.RecyclerActivity"/>
+        <activity android:name=".recycler.multiple.MultipleRecyclerActivity"/>
     </application>
 
 </manifest>

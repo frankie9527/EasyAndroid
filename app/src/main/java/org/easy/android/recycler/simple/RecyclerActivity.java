@@ -1,4 +1,4 @@
-package org.easy.android.recycler;
+package org.easy.android.recycler.simple;
 
 
 import android.os.Bundle;
@@ -19,6 +19,7 @@ import org.easy.tools.utils.ToastUtils;
 import org.easy.tools.utils.UiUtils;
 import org.easy.ui.recycler.RxRecyclerViewDividerTool;
 import org.easy.ui.recycler.listener.ItemClickListener;
+import org.easy.ui.recycler.listener.ItemLongClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,10 +32,10 @@ import java.util.List;
  * https://github.com/ZengChong500373
  * describe :
  */
-public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, ItemClickListener {
+public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, ItemClickListener, ItemLongClickListener {
     Toolbar toolbar;
     RecyclerView recycler;
-    RecyclerDemoAdapter adapter;
+    SimpleAdapter adapter;
     RecyclerView.LayoutManager manager;
     List<Integer> list=new ArrayList<>();
     @Override
@@ -53,11 +54,11 @@ public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMen
         recycler=findViewById(R.id.recycler);
         manager=new LinearLayoutManager(this);
         recycler.setLayoutManager(manager);
-        adapter=new RecyclerDemoAdapter();
+        adapter=new SimpleAdapter();
         recycler.setAdapter(adapter);
         recycler.addItemDecoration(new RxRecyclerViewDividerTool(0,0, UiUtils.dp2px(1),0));
         adapter.setItemListener(this);
-//        adapter.setLongListener(this);
+        adapter.setLongListener(this);
     }
 
     private void initData() {
@@ -96,11 +97,23 @@ public class RecyclerActivity extends AppCompatActivity implements Toolbar.OnMen
 
     @Override
     public void onItemClick(View view, int postion) {
-        ToastUtils.getInstance().show("onItemClick postion="+postion);
+        if (view.getId()==R.id.tv){
+            ToastUtils.getInstance().show("tv postion="+postion);
+        }else {
+            ToastUtils.getInstance().show("父布局 postion="+postion);
+        }
+
     }
 
-//    @Override
-//    public void onItemLongClick(View view, int postion) {
-//        ToastUtils.getInstance().show("onItemLongClick postion="+postion);
-//    }
+
+
+    @Override
+    public void onItemLongClick(View view, int postion) {
+        if (view.getId()==R.id.tv){
+            ToastUtils.getInstance().show("tv LongClick postion="+postion);
+        }else {
+            ToastUtils.getInstance().show("父布局 LongClick postion="+postion);
+        }
+
+    }
 }

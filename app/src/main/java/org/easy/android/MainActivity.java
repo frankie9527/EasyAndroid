@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.easy.android.drag.DragViewActivity;
-import org.easy.android.recycler.RecyclerActivity;
+import org.easy.android.recycler.multiple.MultipleRecyclerActivity;
+import org.easy.android.recycler.simple.RecyclerActivity;
 import org.easy.android.vp.ViewPagerActivity;
 
 /**
@@ -46,12 +47,28 @@ public class MainActivity extends AppCompatActivity {
         intent=new Intent(this, StatusControlActivity.class);
         startActivity(intent);
     }
+    /**
+     * vp 滑动特效
+     *
+     * */
     public void vp(View view) {
         intent=new Intent(this, ViewPagerActivity.class);
         startActivity(intent);
     }
-    public void recycler(View view) {
+    /**
+     * 简单 recycler
+     *
+     * */
+    public void simpleRecycler(View view) {
         intent=new Intent(this, RecyclerActivity.class);
+        startActivity(intent);
+    }
+    /**
+     * 加载不同布局
+     * recycler
+     * */
+    public void multipleRecycler(View view){
+        intent=new Intent(this, MultipleRecyclerActivity.class);
         startActivity(intent);
     }
 }

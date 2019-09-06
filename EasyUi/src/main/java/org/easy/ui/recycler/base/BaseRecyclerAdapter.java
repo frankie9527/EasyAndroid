@@ -52,15 +52,20 @@ public abstract class BaseRecyclerAdapter<D, H extends BaseRecyclerHolder> exten
     }
 
     public void setData(List<D> data) {
+        if (data==null||data.size()==0){
+            return;
+        }
         list.addAll(data);
         notifyDataSetChanged();
     }
 
     public void setDataInEnd(D data) {
+        if (data==null){
+            return;
+        }
         list.add(data);
         notifyDataSetChanged();
     }
-
     public void clear() {
         list.clear();
         notifyDataSetChanged();

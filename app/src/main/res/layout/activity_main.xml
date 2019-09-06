@@ -6,45 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="drag"
-        android:text="拖动的list" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/slide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/drag"
-        android:onClick="slide"
-        android:text="侧拉栏" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/statusControl"
-        android:layout_toEndOf="@id/slide"
-        android:onClick="statusControl"
-        android:text="布局控制器"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="8">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/vp"
-        android:layout_below="@+id/drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="vp"
-        android:textAllCaps="false"
-        android:text="viewpager 特效" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/banner"
-        android:layout_below="@+id/drag"
-        android:layout_toEndOf="@id/vp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="recycler"
-        android:textAllCaps="false"
-        android:text="recycle" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="drag"
+            android:text="拖动的list" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="slide"
+            android:text="侧拉栏" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="statusControl"
+            android:text="布局控制器" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="vp"
+            android:text="viewpager 特效"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="simpleRecycler"
+            android:text="简单 recycle"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="multipleRecycler"
+            android:text="多布局 recycle"
+            android:textAllCaps="false" />
+    </GridLayout>
 </RelativeLayout>
