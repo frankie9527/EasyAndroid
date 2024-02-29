@@ -1549,7 +1549,7 @@ public class SlidingLayout extends ViewGroup {
         }
     }
 
-    public static class LayoutParams extends ViewGroup.MarginLayoutParams {
+    public static class LayoutParams extends MarginLayoutParams {
         private static final int[] ATTRS = new int[] {
                 android.R.attr.layout_weight
         };
@@ -1581,7 +1581,7 @@ public class SlidingLayout extends ViewGroup {
             super(width, height);
         }
 
-        public LayoutParams(android.view.ViewGroup.LayoutParams source) {
+        public LayoutParams(ViewGroup.LayoutParams source) {
             super(source);
         }
 

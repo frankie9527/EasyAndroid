@@ -1,4 +1,4 @@
-package com.ToxicBakery.viewpager.transforms
+package org.easy.ui.viewpager.transforms
 
 import android.view.View
 

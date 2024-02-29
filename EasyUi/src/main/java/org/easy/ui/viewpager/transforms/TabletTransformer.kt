@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ToxicBakery.viewpager.transforms
+package org.easy.ui.viewpager.transforms
 
 import android.graphics.Camera
 import android.graphics.Matrix

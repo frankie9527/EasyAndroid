@@ -13,25 +13,10 @@ import android.view.MenuItem;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.ToxicBakery.viewpager.transforms.AccordionTransformer;
-import com.ToxicBakery.viewpager.transforms.BackgroundToForegroundTransformer;
-import com.ToxicBakery.viewpager.transforms.CubeInTransformer;
-import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
-import com.ToxicBakery.viewpager.transforms.DefaultTransformer;
-import com.ToxicBakery.viewpager.transforms.DepthPageTransformer;
-import com.ToxicBakery.viewpager.transforms.DrawerTransformer;
-import com.ToxicBakery.viewpager.transforms.FlipHorizontalTransformer;
-import com.ToxicBakery.viewpager.transforms.FlipVerticalTransformer;
-import com.ToxicBakery.viewpager.transforms.ForegroundToBackgroundTransformer;
-import com.ToxicBakery.viewpager.transforms.RotateDownTransformer;
-import com.ToxicBakery.viewpager.transforms.ScaleInOutTransformer;
-import com.ToxicBakery.viewpager.transforms.StackTransformer;
-import com.ToxicBakery.viewpager.transforms.TabletTransformer;
-import com.ToxicBakery.viewpager.transforms.ZoomInTransformer;
-import com.ToxicBakery.viewpager.transforms.ZoomOutSlideTransformer;
-import com.ToxicBakery.viewpager.transforms.ZoomOutTransformer;
+
 
 import org.easy.android.R;
+
 import org.easy.ui.viewpager.transforms2.AlphaPageTransformer;
 import org.easy.ui.viewpager.transforms2.NonPageTransformer;
 import org.easy.ui.viewpager.transforms2.RotateDownPageTransformer;
@@ -68,23 +53,23 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
     }
 
     private void initData() {
-        map.put("Default", new DefaultTransformer());
-        map.put("Accordion", new AccordionTransformer());
-        map.put("BackgroundToForeground", new BackgroundToForegroundTransformer());
-        map.put("CubeIn", new CubeInTransformer());
-        map.put("CubeOut", new CubeOutTransformer());
-        map.put("DepthPage", new DepthPageTransformer());
-        map.put("FlipHorizontal", new FlipHorizontalTransformer());
-        map.put("FlipVertical", new FlipVerticalTransformer());
-        map.put("ForegroundToBackground", new ForegroundToBackgroundTransformer());
-        map.put("RotateDown", new RotateDownTransformer());
-        map.put("ScaleInOut", new ScaleInOutTransformer());
-        map.put("Stack", new StackTransformer());
-        map.put("Tablet", new TabletTransformer());
-        map.put("ZoomIn", new ZoomInTransformer());
-        map.put("ZoomOutSlide", new ZoomOutSlideTransformer());
-        map.put("ZoomOut", new ZoomOutTransformer());
-        map.put("Drawer", new DrawerTransformer());
+//        map.put("Default", new DefaultTransformer());
+//        map.put("Accordion", new AccordionTransformer());
+//        map.put("BackgroundToForeground", new BackgroundToForegroundTransformer());
+//        map.put("CubeIn", new CubeInTransformer());
+//        map.put("CubeOut", new CubeOutTransformer());
+//        map.put("DepthPage", new DepthPageTransformer());
+//        map.put("FlipHorizontal", new FlipHorizontalTransformer());
+//        map.put("FlipVertical", new FlipVerticalTransformer());
+//        map.put("ForegroundToBackground", new ForegroundToBackgroundTransformer());
+//        map.put("RotateDown", new RotateDownTransformer());
+//        map.put("ScaleInOut", new ScaleInOutTransformer());
+//        map.put("Stack", new StackTransformer());
+//        map.put("Tablet", new TabletTransformer());
+//        map.put("ZoomIn", new ZoomInTransformer());
+//        map.put("ZoomOutSlide", new ZoomOutSlideTransformer());
+//        map.put("ZoomOut", new ZoomOutTransformer());
+//        map.put("Drawer", new DrawerTransformer());
         toolbar.setTitle("Default");
 
         map2.put("RotateDown", new RotateDownPageTransformer());
@@ -120,18 +105,16 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId) {
-                    case R.id.up:
-                        toolbar.getMenu().clear();
-                        toolbar.inflateMenu(R.menu.menu_viewpager_trans);
-                        checkType = 0;
-                        break;
-                    case R.id.down:
-                        toolbar.getMenu().clear();
-                        toolbar.inflateMenu(R.menu.menu_viewpager_trans2);
-                        checkType = 1;
-                        break;
+                if (checkedId==R.id.up){
+                    toolbar.getMenu().clear();
+                    toolbar.inflateMenu(R.menu.menu_viewpager_trans);
+                    checkType = 0;
+                } else if (checkedId==R.id.down) {
+                    toolbar.getMenu().clear();
+                    toolbar.inflateMenu(R.menu.menu_viewpager_trans2);
+                    checkType = 1;
                 }
+
             }
         });
     }

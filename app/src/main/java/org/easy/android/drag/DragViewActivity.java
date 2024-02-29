@@ -72,13 +72,11 @@ public class DragViewActivity extends AppCompatActivity implements Toolbar.OnMen
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_list:
-                initList();
-                break;
-            case R.id.action_grid:
-                initGrid();
-                break;
+        int id=item.getItemId();
+        if (id==R.id.action_list){
+            initList();
+        }else if (id==R.id.action_grid){
+            initGrid();
         }
         return false;
     }

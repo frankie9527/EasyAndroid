@@ -4,7 +4,7 @@
     android:id="@+id/slide_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/purple_500"
     app:mode="default_"
     app:compat_sliding="true">
     <include layout="@layout/activity_slide_left"/>
@@ -15,7 +15,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/colorPrimary" >
+            android:background="@color/purple_500" >
 
             <TextView
                 android:id="@+id/tvTitle"

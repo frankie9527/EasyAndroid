@@ -143,7 +143,7 @@ public class DragListView extends ListView {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
             if (activity.getTheme().resolveAttribute(android.R.attr.actionBarSize, tv, true))
                 actionbarHeight = TypedValue.complexToDimensionPixelSize(tv.data, getResources().getDisplayMetrics());
-        }else if (activity.getTheme().resolveAttribute(R.attr.actionBarSize,tv,true)){
+        }else if (activity.getTheme().resolveAttribute(androidx.appcompat.R.attr.actionBarSize,tv,true)){
             actionbarHeight = TypedValue.complexToDimensionPixelSize(tv.data, getResources().getDisplayMetrics());
         }
     }
