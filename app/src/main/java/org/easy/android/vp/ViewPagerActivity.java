@@ -8,15 +8,27 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.MenuItem;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
-
-
 import org.easy.android.R;
-
+import org.easy.ui.viewpager.transforms.AccordionTransformer;
+import org.easy.ui.viewpager.transforms.BackgroundToForegroundTransformer;
+import org.easy.ui.viewpager.transforms.CubeInTransformer;
+import org.easy.ui.viewpager.transforms.CubeOutTransformer;
+import org.easy.ui.viewpager.transforms.DefaultTransformer;
+import org.easy.ui.viewpager.transforms.DepthPageTransformer;
+import org.easy.ui.viewpager.transforms.DrawerTransformer;
+import org.easy.ui.viewpager.transforms.FlipHorizontalTransformer;
+import org.easy.ui.viewpager.transforms.FlipVerticalTransformer;
+import org.easy.ui.viewpager.transforms.ForegroundToBackgroundTransformer;
+import org.easy.ui.viewpager.transforms.RotateDownTransformer;
+import org.easy.ui.viewpager.transforms.ScaleInOutTransformer;
+import org.easy.ui.viewpager.transforms.StackTransformer;
+import org.easy.ui.viewpager.transforms.TabletTransformer;
+import org.easy.ui.viewpager.transforms.ZoomInTransformer;
+import org.easy.ui.viewpager.transforms.ZoomOutSlideTransformer;
+import org.easy.ui.viewpager.transforms.ZoomOutTransformer;
 import org.easy.ui.viewpager.transforms2.AlphaPageTransformer;
 import org.easy.ui.viewpager.transforms2.NonPageTransformer;
 import org.easy.ui.viewpager.transforms2.RotateDownPageTransformer;
@@ -53,23 +65,23 @@ public class ViewPagerActivity extends AppCompatActivity implements Toolbar.OnMe
     }
 
     private void initData() {
-//        map.put("Default", new DefaultTransformer());
-//        map.put("Accordion", new AccordionTransformer());
-//        map.put("BackgroundToForeground", new BackgroundToForegroundTransformer());
-//        map.put("CubeIn", new CubeInTransformer());
-//        map.put("CubeOut", new CubeOutTransformer());
-//        map.put("DepthPage", new DepthPageTransformer());
-//        map.put("FlipHorizontal", new FlipHorizontalTransformer());
-//        map.put("FlipVertical", new FlipVerticalTransformer());
-//        map.put("ForegroundToBackground", new ForegroundToBackgroundTransformer());
-//        map.put("RotateDown", new RotateDownTransformer());
-//        map.put("ScaleInOut", new ScaleInOutTransformer());
-//        map.put("Stack", new StackTransformer());
-//        map.put("Tablet", new TabletTransformer());
-//        map.put("ZoomIn", new ZoomInTransformer());
-//        map.put("ZoomOutSlide", new ZoomOutSlideTransformer());
-//        map.put("ZoomOut", new ZoomOutTransformer());
-//        map.put("Drawer", new DrawerTransformer());
+        map.put("Default", new DefaultTransformer());
+        map.put("Accordion", new AccordionTransformer());
+        map.put("BackgroundToForeground", new BackgroundToForegroundTransformer());
+        map.put("CubeIn", new CubeInTransformer());
+        map.put("CubeOut", new CubeOutTransformer());
+        map.put("DepthPage", new DepthPageTransformer());
+        map.put("FlipHorizontal", new FlipHorizontalTransformer());
+        map.put("FlipVertical", new FlipVerticalTransformer());
+        map.put("ForegroundToBackground", new ForegroundToBackgroundTransformer());
+        map.put("RotateDown", new RotateDownTransformer());
+        map.put("ScaleInOut", new ScaleInOutTransformer());
+        map.put("Stack", new StackTransformer());
+        map.put("Tablet", new TabletTransformer());
+        map.put("ZoomIn", new ZoomInTransformer());
+        map.put("ZoomOutSlide", new ZoomOutSlideTransformer());
+        map.put("ZoomOut", new ZoomOutTransformer());
+        map.put("Drawer", new DrawerTransformer());
         toolbar.setTitle("Default");
 
         map2.put("RotateDown", new RotateDownPageTransformer());
