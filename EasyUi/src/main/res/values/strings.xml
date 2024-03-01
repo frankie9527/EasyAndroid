@@ -1,10 +1,7 @@
 <resources>
-    <string name="app_name">EasyUi</string>
-
-
-
-    <string name="loading_text">加载中&#8230;</string>
-    <string name="no_network">请检查网络后点击重新加载</string>
-    <string name="data_error">数据获取失败(ㄒoㄒ)~~</string>
-    <string name="empty_view_hint">暂时木有内容呀~~</string>
+    <string name="app_name" translatable="false">EasyUi</string>
+    <string name="loading_text">loading&#8230;</string>
+    <string name="no_network">Please check the network and click reload</string>
+    <string name="data_error">Data acquisition failed(ㄒoㄒ)~~</string>
+    <string name="empty_view_hint">There is no content at the moment~~</string>
 </resources>
