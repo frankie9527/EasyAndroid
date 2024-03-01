@@ -1,5 +1,6 @@
 plugins {
     id("com.android.library")
+    id("maven-publish") //新添加的
 }
 
 android {
